@@ -15,6 +15,7 @@ class GeneralTypeTest extends TypeInferenceTestCase
     {
         yield from $this->gatherAssertTypes(__DIR__.'/data/request-object.php');
         yield from $this->gatherAssertTypes(__DIR__.'/data/eloquent-builder.php');
+        yield from $this->gatherAssertTypes(__DIR__.'/data/query-builder.php');
         yield from $this->gatherAssertTypes(__DIR__.'/data/paginator-extension.php');
         yield from $this->gatherAssertTypes(__DIR__.'/data/model-properties.php');
         yield from $this->gatherAssertTypes(__DIR__.'/data/model-properties-relations.php');
@@ -53,6 +54,7 @@ class GeneralTypeTest extends TypeInferenceTestCase
         yield from $this->gatherAssertTypes(__DIR__.'/data/gate-facade.php');
         yield from $this->gatherAssertTypes(__DIR__.'/data/helpers.php');
         yield from $this->gatherAssertTypes(__DIR__.'/data/custom-eloquent-collection.php');
+        yield from $this->gatherAssertTypes(__DIR__.'/data/translator.php');
 
         //##############################################################################################################
 
